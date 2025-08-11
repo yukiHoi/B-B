@@ -1,0 +1,394 @@
+﻿/*dog lover css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    font-weight: 700;
+}
+.media-text{
+    visibility: hidden;
+}
+.nav1 {
+    padding: 20px 10px;
+    background-color: #3DCAB5;
+    max-width: 900%;
+}
+
+    .nav1 ul {
+        text-align: right;
+        background: rgba(116, 255, 220, 0.58);
+        padding: 18px;
+    }
+
+nav {
+    background-color: #3DCAB5;
+    padding: 1px 14px;
+    max-width: 900%;
+    font-size: 20px;
+}
+
+.logo {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    left: 50px;
+    border-style: solid;
+    border-color: #B59410;
+    padding: 10px;
+    visibility: visible;
+}
+
+header {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.red-button {
+    background-color: #B03737;
+    padding: 20px;
+}
+
+    .red-button :hover {
+        background-color: #C21E56;
+    }
+
+nav ul {
+    text-align: center;
+}
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px;
+        }
+/*main*/
+main {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #013220;
+}
+.dogbg-container {
+    background-image: url("../img/dogbg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+.intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+    .intro > h1 {
+        font-family: "Times New Roman", Times, serif;
+    }
+    .intro p {
+        padding: 20px;
+    }
+    article{
+        display: flex;
+        padding-left: 60px;
+    }
+aside {
+    flex: 4;
+}
+aside li{
+    padding: 10px;
+}
+aside > h1{
+    padding-left: 30px;
+}
+ .dogroom-container{
+    flex: 6;
+}
+    .first-img{
+        width: 900px;
+        height: 400px;
+        padding: 10px;
+    }
+
+.title{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.small-img-container,
+.Small-garden-img-container {
+    display: flex;
+}
+
+    .small {
+        width: 200px;
+        height: 100px;
+        padding: 0 13px;
+        visibility: visible;
+    }
+
+.garden-box {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #81D8D0;
+    color: #F7F7FF;
+    padding-top: 10px;
+    margin: 30px 40px;
+    max-width: 1000%;
+    display: flex;
+    flex-direction: column;
+}
+.doggardenImg-container {
+    display: flex;
+    padding: 10px ;
+    flex-direction: column;
+}
+.garden-title{
+    text-align: center;
+}
+
+.outer{
+    display: flex;
+}
+.text {
+    padding: 20px 30px;
+    line-height: 1.6;
+}
+/*footer css*/
+.footer-logo {
+    position: relative;
+    width: 12%;
+    height: auto;
+    top: -40px;
+    border-style: solid;
+    border-color: #B59410;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 60px;
+    height: auto;
+    background-color: #3DCAB5;
+    background-color: rgba(61,202,181, 0.6);
+    text-align: center;
+    color: #013220;
+    font-size: 20px;
+    border-top: 2px solid #B59410;
+}
+
+    footer a {
+        color: #013220;
+        text-decoration: none;
+    }
+
+.social-icon li,
+.foot-nav li,
+.last li {
+    display: inline;
+}
+
+    .social-icon li a,
+    .foot-nav li a,
+    .last li a {
+        color: #013220;
+        text-decoration: none;
+        margin: 40px 40px;
+    }
+
+.last {
+    text-align: center;
+}
+
+a {
+    color: #B59410;
+}
+.foot-nav{
+    visibility: visible;
+}
+.social-media-site {
+    display: flex;
+    margin: 0 auto;
+}
+  /*media*/
+@media screen and (min-width: 390px) and (max-width: 570px){
+main{
+    text-align: justify;
+    font-size:20px;
+    }
+    .social-media-site {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        order: 5;
+    }
+    .logo{
+    visibility: hidden;
+    }
+    .foot-nav{
+    visibility: hidden;
+    }
+ .red-button {
+    padding: 10px;
+    font-size:6px;
+    }
+    .media-text{
+    visibility: visible;
+    text-align: center;
+    margin: 0 auto; 
+    font-style: italic;
+    }
+     nav > ul li  {
+        display: block;
+        margin-right: 20px;
+    }
+    article{
+    display: flex;
+    flex-direction: column;
+    }
+    aside{
+    order: 1;
+    }
+ .first-img{
+        width: auto;
+        height: 200px;
+        padding: 10px;
+    }
+    .dogroom-container >img{
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    }
+ .small {
+         visibility: hidden;
+    }
+    .features{
+    margin-top: -100px;
+    margin-left: -20px;
+    }
+    .outer{
+    display: flex;
+    flex-direction: column;
+    }
+    .text{
+     margin-top: -100px;
+    }
+    .red-button{
+    font-size: 10px;
+    }
+    .intro{
+    margin-left: -50px;
+    }
+    .last li {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 571px) and (max-width: 767px){
+main{
+    text-align: justify;
+    }
+    .social-media-site {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        order: 5;
+    }
+    .logo{
+    visibility: hidden;
+    }
+    .media-text{
+    visibility: visible;
+    text-align: center;
+    margin: 0 auto; 
+    font-style: italic;
+    }
+    .first-img {
+        width: auto;
+        height: 200px;
+        padding: 10px;
+    }
+
+    .dogroom-container > img {
+        width: 300px;
+        height: 200px;
+        padding: 10px;
+    }
+    .foot-nav{
+    visibility: hidden;
+    }
+
+    .media-text{
+    visibility: visible;
+    text-align: center;
+    margin: 0 auto; 
+    font-style: italic;
+    }
+    article{
+    display: flex;
+    flex-direction: column;
+    }
+    aside{
+    order: 1;
+    }
+ .small {
+         visibility: hidden;
+    }
+    .features{
+    margin-top: -100px;
+    margin-left: -20px;
+    }
+    .outer{
+    display: flex;
+    flex-direction: column;
+    }
+    .text{
+     margin-top: -100px;
+    }
+    .red-button{
+    font-size: 20px;
+    }
+}
+/*media*/
+@media screen and (min-width: 768px) and (max-width: 999px){
+ .outer{
+    display: flex;
+    flex-direction: column;
+    }
+    .social-media-site {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        order: 5;
+    }
+    .text{
+     margin-top: -100px;
+    }
+    .red-button{
+    font-size: 20px;
+    }
+    article{
+    display: flex;
+    flex-direction: column;
+    }
+    aside{
+    order: 1;
+    }
+    .first-img{
+        width: auto;
+        height: 300px;
+        padding: 10px;
+        }
+        .small {
+        width: 200px;
+        height: 100px;
+        padding: 10px;
+    }
+    .text{
+    margin-top: 10px;
+    }
+}

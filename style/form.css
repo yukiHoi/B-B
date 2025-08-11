@@ -1,0 +1,428 @@
+﻿/*form css*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    font-weight: 700;
+}
+.media-text{
+    visibility: hidden;
+}
+.nav1 {
+    padding: 20px 10px;
+    background-color: #3DCAB5;
+    max-width: 900%;
+}
+
+    .nav1 ul {
+        text-align: right;
+        background: rgba(116, 255, 220, 0.58);
+        padding: 18px;
+    }
+
+nav {
+    background-color: #3DCAB5;
+    padding: 1px 14px;
+    max-width: 900%;
+    font-size: 20px;
+}
+
+.logo {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    left: 50px;
+    border-style: solid;
+    border-color: #B59410;
+    padding: 10px;
+    visibility: visible;
+}
+
+header {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.red-button {
+    background-color: #B03737;
+    padding: 20px;
+}
+
+    .red-button :hover {
+        background-color: #C21E56;
+    }
+
+nav ul {
+    text-align: center;
+}
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px;
+        }
+/*main*/
+main {
+  
+    color: #013220;
+}
+
+.bg-container {
+    background-image: url("../img/formBG.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+.form-container {
+    display: flex;
+    border-color: #B59410;
+    border-style: solid;
+    margin: 60px 90px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 20px;
+    }
+form {
+    margin: 0 auto; 
+    background-color:#e0e0e0;
+    padding: 30px 70px;
+    width: 100%;
+}
+    .form-container > img {
+        width: 850px;
+        height: auto;
+        border-color: #e0e0e0;
+        border-style: solid;
+        border-width: 20px;
+        visibility: visible;
+        padding: 30px;
+    }
+.form-group,
+form > h2 {
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+}
+.form-group-clickbox {
+    display: flex;
+    padding: 8px 12px;
+}
+.name,.address,.contact,.checkin {
+    display: flex;
+}
+.form-group input[name="state"],
+.form-group input[name="zipcode"],
+.form-group input[name="city"],
+.form-group select[name="room-type"] {
+
+    width: 60%;
+} 
+.form-group input[name="adults"],
+.form-group input[name="children"] {
+    width: 30%;
+}
+.form-group-checkbox{
+    padding: 10px;
+}
+.form-group button {
+    padding: 20px;
+    background-color: #0096FF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+    .form-group button:hover {
+        background-color: #0000FF;
+    }
+    .house-rules{
+    text-align: center;
+    }
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+  td {
+    border: 1px solid #ddd; 
+    padding: 8px 60px; 
+    }
+/*footer css*/
+footer {
+    margin-top: 60px;
+    height: auto;
+    background-color: #3DCAB5;
+    background-color: rgba(61,202,181, 0.6);
+    text-align: center;
+    color: #013220;
+    font-size: 20px;
+    border-top: 2px solid #B59410;
+}
+
+.footer-logo {
+    position: relative;
+    width: 12%;
+    height: auto;
+    top: -40px;
+    border-style: solid;
+    border-color: #B59410;
+    padding: 10px;
+}
+
+footer a {
+    color: #013220;
+    text-decoration: none;
+}
+
+.social-icon li,
+.foot-nav li,
+.last li {
+    display: inline;
+}
+
+    .social-icon li a,
+    .foot-nav li a,
+    .last li a {
+        color: #013220;
+        text-decoration: none;
+        margin: 40px 40px;
+    }
+
+.last {
+    text-align: center;
+}
+
+a {
+    color: #B59410;
+}
+.foot-nav{
+    visibility: visible;
+}
+  /*media*/
+@media screen and (min-width: 390px) and (max-width: 570px){
+    .logo{
+    visibility: hidden;
+    }
+      .foot-nav{
+    visibility: hidden;
+    }
+    .red-button {
+    padding: 10px;
+    font-size:6px;
+    }
+    .media-text{
+    visibility: visible;
+    text-align: center;
+    margin: 0 auto; 
+    font-style: italic;
+    }
+     nav > ul li  {
+        display: block;
+        margin-right: 20px;
+    }
+     .form-container > img {
+        visibility: hidden;
+    }
+    .form-container {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 0 auto;
+    }
+
+    .form-group,
+form > h2 {
+    padding: 1px 2px;
+}
+form{
+    position: absolute;
+    border-style: solid;
+    border-color: #B59410;
+    background-color: #F1E5AC;
+    padding: 40px;
+    width: auto;
+    margin-left: -20px;
+}
+
+.form-group input[name="state"],
+.form-group input[name="zipcode"],
+.form-group input[name="city"],
+.form-group input[name="adults"],
+.form-group input[name="children"] {
+    width: 40%;
+}
+.form-group input[name="fname"],
+.form-group input[name="Lname"],
+.form-group input[name="city"],
+.form-group input[name="address"],
+.form-group input[name="phonenumber"],
+.form-group input[name="email"] {
+    width: 70%;
+}
+.form-group select[name="room-type"]{
+    width: 50%;
+} 
+
+.form-group-checkbox{
+    padding: 10px;
+}
+.form-group button {
+    padding: 20px;
+    background-color: #0096FF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    }
+    .form-group button {
+    padding: 10px;
+    width: 60%;
+    margin: 0 auto;
+    }
+.red-button{
+    font-size: 10px;
+    }
+}
+@media screen and (min-width: 571px) and (max-width: 767px) {
+    .foot-nav{
+    visibility: hidden;
+    }
+           .logo{
+    visibility: hidden;
+    }
+    .media-text{
+    visibility: visible;
+    text-align: center;
+    margin: 0 auto; 
+    font-style: italic;
+    }
+    .form-container > img {
+        visibility: hidden;
+    }
+    .form-container {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 0 auto;
+    }
+   .form-group,
+form > h2 {
+    padding: 2px 4px;
+}
+
+.form-group input[name="state"],
+.form-group input[name="zipcode"],
+.form-group input[name="city"],
+.form-group input[name="adults"],
+.form-group input[name="children"] {
+    width: 50%;
+}
+.form-group input[name="fname"],
+.form-group input[name="Lname"],
+.form-group input[name="city"],
+.form-group input[name="address"],
+.form-group input[name="phonenumber"],
+.form-group input[name="email"] {
+    width: 80%;
+}
+.form-group select[name="room-type"]{
+    width: 60%;
+} 
+
+.form-group-checkbox{
+    padding: 10px;
+}
+.form-group button {
+    padding: 20px;
+    background-color: #0096FF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    }
+form{
+    position: absolute;
+    border: border-style: solid;
+    border-color: #B59410;
+    background-color: #F1E5AC;
+    padding: 40px;
+    width: auto;
+    margin-left: -20px;
+    margin: 0 auto;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 980px){
+    .foot-nav{
+    visibility: hidden;
+    }
+    .form-container > img {
+        visibility: hidden;
+    }
+    .form-container {
+    display: flex;
+    flex-direction: column;
+    border: none;
+   
+    }
+   .form-group,
+form > h2 {
+    padding: 2px 4px;
+}
+form{
+    position: absolute;
+    border: border-style: solid;
+    border-color: #B59410;
+    background-color: #F1E5AC;
+    padding: 20px 100px;
+    width: auto;
+     margin: 0 auto;
+}
+
+    nav ul li a{
+     padding: 2px;
+    }
+
+}
+@media screen and (min-width: 981px) and (max-width: 1200px){
+    .form-container > img {
+        width: 750px;
+        height: auto;
+    }
+
+  .form-container > img {
+        visibility: hidden;
+    }
+    .form-container {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 50px;
+    
+    }
+   .form-group,
+form > h2 {
+    padding: 2px 4px;
+}
+form{
+    position: absolute;
+    border: border-style: solid;
+    border-color: #B59410;
+    background-color: #F1E5AC;
+    width: auto;
+    height: auto;
+    padding: 20px 100px;
+    margin-left: -30px;
+}
+
+    .form-group,
+    form > h2 {
+    padding: 2px 20px;
+    }
+    .form-container {
+    border: none;
+    }
+}

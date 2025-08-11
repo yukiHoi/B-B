@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ARANMOR</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="guest house, galway, aren island"/>
+    <meta name="author" content="Yuki Hoi"/>
+    <link rel="stylesheet" href="style/index.css" type="text/css">
+    <link rel="icon" type="img/png" href="img/favi.png" />
+    <script src = "distanceCal.js"></script>
+    <script>
+
+    function success(position) {
+        document.getElementById ('visitus').style.display = 'block';
+    	
+    	document.getElementById ('coordlat').innerHTML =  position.coords.latitude;
+    	document.getElementById ('coordlong').innerHTML = position.coords.longitude;
+    	
+    	document.getElementById ('distance2').innerHTML = getDistanceFromLatLonInKm(51.897871900000000000, -8.471087399999988000, 
+    	position.coords.latitude, position.coords.longitude);
+    	}
+	 
+   </script>
+
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0" nonce="4aJ5FCNP"></script>
+
+    <header>
+
+        <a href="index.html"><img class="logo" src="img/Aranmor.png" alt="B&B Logo"></a>
+        <nav class="nav1">
+            <div class="media-text">
+                <h1 style="color:#B59410;">ARANMORE</h1>
+                <p style="font-size: 10px;">Aren Island Galway</p>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a>|</li>
+                <li><a href=".html">Blog</a>|</li>
+                <li class="red-button"><a href="form.html">CHECK AVILABLE</a></li>
+
+            </ul>
+        </nav>
+
+        <nav class="nav2">
+            <ul>
+                <li><a href="guestroom.html">Guest Rooms</a></li>
+                <li><a href=".html">Island Activity</a></li>
+                <li><a href=".html">Map & Direction</a></li>
+                <li><a href="furryguest.html">Furry Guests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="video-container">
+            <video autoplay loop muted>
+                <source src="video/aren.mov" alt="background video" />
+            </video>
+        </section>
+
+        <div class="distance">
+            <button onclick="navigator.geolocation.getCurrentPosition(success);">distance</button>
+            <p id="visitus">
+            <p>You're <span id="distance2">0</span> mi from Aren Island Galway. Come visit!</p>
+            <p>
+                Your current lat is:<span id="coordlat">0</span>
+                Your current long is:<span id="coordlong">0</span>
+            </p>
+
+        </div>
+
+        <div class="intro">
+            <h1>ARANMOR GUEST HOUSE</h1>
+            <h2>Welcome to Aranmor Guest House, nestled on a sprawling 20-acre estate overlooking the breathtaking coastline of Aran Island. </h2>
+            <p>
+                Welcome to Aranmor Guest House, where nature's grandeur takes center stage. Perched on the cliffs of Kilronan, our retreat offers unparalleled panoramic views of the boundless Atlantic Ocean. Just a leisurely stroll from the iconic Joe Wattys and a brief 20-minute walk from the ferry, our cozy haven immerses you in the rugged beauty of the Irish coastline. Step into our modern, nature-inspired spaces, where every comfort is seamlessly woven into the fabric of the surroundings, promising an unforgettable stay amidst the untamed beauty of the ocean.
+            </p>
+        </div>
+
+        <article class="table1">
+            <div>
+                <img class="big-img" src="img/luxbed.jpg" alt="bedroom" style="">
+            </div>
+            <div>
+                <h2>ROOMS & SUITES</h2>
+                <p>
+                    Our Guest House features finely appointed accommodations,
+                    including four romantic guest rooms and two suites.
+                    For more privacy, we also offer two stand-alone units:
+                    our historic Darrell Hill Cottage and our newly-renovated Red Barn.
+                    Each room has its own distinct style, yet they all feature comfortable sitting areas,
+                    private baths, exquisite design detail, original artwork and charming amenities including overhead
+                    and tower fans and the cooler temperatures that come with our altitude. Enjoy the breeze without
+                    the need for air conditioning.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="table1">
+            <div lass="second">
+                <h2>COUNTRY ESTATE</h2>
+                <p>
+                    At 1,400 feet, the Estate offers sweeping ocean views from every corner.
+                    Explore the open-air floor plan of the main house, where natural Atlantic breezes.
+                    Outside, there is a mature lawned garden where you and your guests can relax and enjoy the peaceful sea views. BBQ is available under request.Wifi is available at the property. Towels are provided within the house
+                    Local area & Tourist Attractions Bealadangan is a small Gaeltacht village with a grocery store, post office and village pub. With free private parking, We are located on the west side of the island, approximately 6.5km from the village of Kilronan. <br>
+                    <h3>Languages spoken<br>English,Irish</h3>
+                <p />
+            </div>
+            <div class="first">
+                <img class="big-img" src="img/countryhouse.jpg" alt="country house" style="">
+            </div>
+
+        </article>
+        <article class="table1">
+            <div class="both-img">
+                <img class="small-img" src="img/wormhole.JPG" alt="The wromhole pool" style="">
+                <img class="small-img" src="img/houseriding.JPG" alt="house riding" style="">
+            </div>
+            <div class="island-act">
+                <h2>ISLAND ACTIVITIES</h2>
+                <p>
+                    The Wormhole is a rectangular shaped blow hole that was naturally carved by mother nature. It’s dimensions are approximately 25m long, 10m wide and between 10-20m deep.
+                    The Wormhole or “Poll na bPeist” in Gaelic is a spectacular natural feature, and has become one of the main attractions on Inishmore since the Red Bull Cliff Diving World Series was held here in 2014 & 2017.
+                    Once you’ve booked your stay with us, contact <a href="mailto:yuki.hoi@students.ittralee.ie">aranmorinn@gmail.com </a>for personal planning assistance.
+                </p>
+            </div>
+
+        </article>
+        <article class="table1">
+            <div>
+                <h2>FRESH BREAKFAST</h2>
+                <p>
+                    Mornings at our Big Island retreat are a wondrous experience. Our Full Irish Breakfast is a beloved favourite among locals and visitors alike. Savour the hearty flavours of sizzling bacon,
+                    succulent sausages, perfectly cooked eggs, grilled tomatoes, and crispy hash browns. Accompanied by black and white puddings, baked beans, and buttery toast, it’s a feast fit for champions.
+                    Perfect to set you up for a day exploring all the sights of Inis Mór.For those seeking a lighter option, our Continental Breakfast is an excellent choice. Enjoy a delightful selection of freshly baked pastries,
+                    crusty bread, a variety of cheeses, cold cuts, yoghurt, seasonal fruits, and a range of cereals. Complement your meal with a steaming cup of freshly brewed coffee or a refreshing glass of fruit juice.
+                <p />
+            </div>
+            <div>
+                <img class="big-img" src="img/breakfast.jpg" alt="breakfast" style="">
+            </div>
+
+        </article>
+
+        <aside class="special-box">
+            <h1>SPECIALS & PACKAGES </h1>
+            <div class="special">
+                <div class="first">
+                    <img src="img/freediv.PNG" alt="free diving" style="">
+                </div>
+                <div class="second">
+                    <h2>Introduction to Freediving</h2>
+                    <p>The beginning of your one-breath adventure.</p>
+                    <a href="">Learn more >></a>
+                </div>
+
+            </div>
+        </aside>
+        <aside class="table1">
+            <div class="signup">
+                <h2>SIGN UP FOR OUR EXCLUSIVE VIP LIST</h2>
+                <p>
+                    Learn about upcoming events and seasonal specials.
+                <p />
+                <form class="signup" action="mailto:yuki.hoi@students.ittralee.ie.com" method="post">
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <button class="signUp-button" type="submit">Sign Up</button>
+                </form>
+            </div>
+
+
+            <div class="both-img">
+                <img class="small-img" src="img/1.JPG" alt="sea" style="">
+                <img class="small-img" src="img/2.JPG" alt="cliffs" style="">
+            </div>
+        </aside>
+        <div class="social-media-site">
+            <div class="fb-page" data-href="https://www.facebook.com/JwHunterCompanyInc" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/JwHunterCompanyInc" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/JwHunterCompanyInc">J.W. Hunter Company, Inc.</a></blockquote></div>
+            <a href="https://twitter.com/intent/tweet?screen_name=twitter&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @twitter</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </main>
+
+    <footer>
+        <img class="footer-logo" src="img/Aranmor.png" alt="Logo">
+        <p>
+            Aranmor Guest House <br />
+            22 The Holiday Village, Carraroe, H99 Aht8<br />
+            088-324-1122<br />
+            <a href="mailto:yuki.hoi@students.ittralee.ie">aranmorinn@gmail.com</a>
+        </p>
+        <ul class="social-icon">
+            <li>
+                <a href="https://www.facebook.com">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://twitter.com">
+                    <i class="fa-brands fa-square-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=E8XiVMw2cjc">
+                    <i class="fa-brands fa-square-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com">
+
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="foot-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href=".html">Blog</a></li>
+            <li><a href="form.html">Check Avilable</a></li>
+            <li><a href="guestroom.html">Guest Room </a></li>
+            <li><a href=".html">Island activity</a></li>
+            <li><a href=".html">Map & Direction</a></li>
+            <li><a href="furryguest.html">Furry Guests</a></li>
+        </ul>
+
+    </footer>
+
+    <hr />
+    <ul class="last">
+        <li><a href="">© 2024 Aranmor Inn</a></li>
+        <li><a href="">Website Design by Coding Dog</a></li>
+        <li><a href="">Photography by Maya</a></li>
+        <li><a href="">Privacy Policy</a></li>
+    </ul>
+    <script src="https://kit.fontawesome.com/2ab261a545.js" crossorigin="anonymous"></script>
+</body>
+</html>
